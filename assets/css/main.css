@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Main stylesheet — imports all partials, processed by Hugo Pipes
+   ========================================================================== */
+
+@import "_variables.css";
+@import "_reset.css";
+@import "_typography.css";
+@import "_layout.css";
+@import "_nav.css";
+@import "_footer.css";
+@import "_hero.css";
+@import "_cards.css";
+@import "_blog.css";
+@import "_gallery.css";
+@import "_responsive.css";

@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Blog — list styling, post cards
+   ========================================================================== */
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.blog-card {
+  padding: var(--space-lg);
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--color-secondary);
+  transition: box-shadow var(--transition-base);
+}
+
+.blog-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.blog-card__date {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  margin-bottom: var(--space-xs);
+}
+
+.blog-card__title {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-sm);
+}
+
+.blog-card__title a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.blog-card__title a:hover {
+  color: var(--color-secondary);
+}
+
+.blog-card__summary {
+  color: var(--color-text-light);
+  font-size: var(--text-base);
+  margin-bottom: var(--space-sm);
+}
+
+.blog-card__tags {
+  display: flex;
+  gap: var(--space-xs);
+  flex-wrap: wrap;
+}
+
+.blog-card__tag {
+  display: inline-block;
+  padding: 2px var(--space-sm);
+  font-size: var(--text-sm);
+  background-color: var(--color-bg-alt);
+  color: var(--color-text-light);
+  border-radius: var(--radius-sm);
+}
+
+/* Page styles */
+.page__header {
+  margin-bottom: var(--space-xl);
+}
+
+.page__title {
+  font-size: var(--text-4xl);
+  margin-bottom: var(--space-sm);
+}
+
+.page__subtitle {
+  font-size: var(--text-xl);
+  color: var(--color-text-light);
+  font-style: italic;
+}

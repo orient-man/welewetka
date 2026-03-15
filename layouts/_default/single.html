@@ -1,0 +1,37 @@
+{{ define "main" }}
+<article class="page section">
+  <div class="container container--narrow">
+    <header class="page__header">
+      <h1 class="page__title">{{ .Title }}</h1>
+      {{ with .Params.subtitle }}
+      <p class="page__subtitle">{{ . }}</p>
+      {{ end }}
+    </header>
+
+    {{/* Team members — if page has team data */}}
+    {{ with .Params.team }}
+    <div class="team-grid mt-2xl">
+      {{ range . }}
+        {{ partial "team-card.html" . }}
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{/* Reviews — if page has reviews data */}}
+    {{ with .Params.reviews }}
+    <div class="reviews-grid mt-2xl">
+      {{ range . }}
+        {{ partial "review-card.html" . }}
+      {{ end }}
+    </div>
+    {{ end }}
+
+    {{/* Main content */}}
+    {{ if .Content }}
+    <div class="content mt-xl">
+      {{ .Content }}
+    </div>
+    {{ end }}
+  </div>
+</article>
+{{ end }}

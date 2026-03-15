@@ -1,0 +1,156 @@
+/* ==========================================================================
+   Cards — event cards, review cards
+   ========================================================================== */
+
+/* Event cards */
+.events-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+}
+
+.event-card {
+  display: flex;
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-base);
+}
+
+.event-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.event-card__date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 70px;
+  padding: var(--space-sm);
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--radius-sm);
+  text-align: center;
+}
+
+.event-card__day {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.event-card__month {
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.event-card__year {
+  font-size: var(--text-sm);
+  opacity: 0.8;
+}
+
+.event-card__title {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-xs);
+}
+
+.event-card__title a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.event-card__title a:hover {
+  color: var(--color-secondary);
+}
+
+.event-card__venue {
+  font-size: var(--text-sm);
+  color: var(--color-accent);
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+.event-card__summary {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  margin-bottom: 0;
+}
+
+/* Review cards */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  max-width: var(--container-narrow);
+  margin: 0 auto;
+}
+
+.review-card {
+  padding: var(--space-xl);
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--color-accent);
+}
+
+.review-card__quote {
+  border: none;
+  padding: 0;
+  margin: 0 0 var(--space-md) 0;
+  background: none;
+  font-style: italic;
+  font-size: var(--text-lg);
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+.review-card__quote p {
+  margin-bottom: 0;
+}
+
+.review-card__attribution {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.review-card__author {
+  font-weight: 600;
+  color: var(--color-primary);
+  font-style: normal;
+}
+
+.review-card__source {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+}
+
+/* Press quotes (homepage) */
+.press-quote {
+  max-width: var(--container-narrow);
+  margin: 0 auto var(--space-xl);
+  text-align: center;
+  border-left: none;
+  background: none;
+  padding: var(--space-lg);
+}
+
+.press-quote p {
+  font-size: var(--text-xl);
+  font-style: italic;
+  line-height: 1.7;
+}
+
+.press-quote cite {
+  display: block;
+  margin-top: var(--space-sm);
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  font-style: normal;
+}

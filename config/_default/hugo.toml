@@ -1,0 +1,24 @@
+baseURL = "https://welewetka.orientman.com/"
+languageCode = "pl"
+title = "Welewetka. Jak znikają Kaszuby"
+
+
+# Build settings
+enableRobotsTXT = true
+enableEmoji = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[languages]
+  [languages.pl]
+    languageName = "Polski"
+    weight = 1
+
+    [languages.pl.params]
+      dateFormat = "2 January 2006"
+
+[permalinks]
+  aktualnosci = "/aktualnosci/:contentbasename/"

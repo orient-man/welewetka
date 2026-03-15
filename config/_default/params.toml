@@ -1,0 +1,20 @@
+# Site description
+description = "Strona internetowa spektaklu teatralnego 'Welewetka. Jak znikają Kaszuby' — monodramu na podstawie książki Stasi Budzisz, realizowanego przez Fundację Wiatrakcje."
+
+# Contact
+email = "fundacja@wiatrakcje.pl"
+
+# Social media
+[social]
+  facebook = ""
+  instagram = ""
+
+# Open Graph defaults
+ogImage = "/images/og-default.jpg"
+
+# Foundation info
+[fundacja]
+  name = "Fundacja Wiatrakcje"
+  krs = "0000749430"
+  address = "Lipy 4, 83-430 Stara Kiszewa"
+  president = "Weronika Knopik"

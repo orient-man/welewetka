@@ -1,0 +1,31 @@
+{{/* Gallery shortcode — reads all images from static/images/galeria/ */}}
+{{ $galleryPath := "images/galeria" }}
+{{ $images := readDir (printf "static/%s" $galleryPath) }}
+
+<div class="gallery">
+  {{ range $images }}
+    {{ if or (strings.HasSuffix .Name ".jpg") (strings.HasSuffix .Name ".jpeg") (strings.HasSuffix .Name ".png") (strings.HasSuffix .Name ".webp") }}
+    {{ $alt := replace .Name "-" " " | replaceRE `\.[^.]+$` "" }}
+    <a href="{{ printf "/%s/%s" $galleryPath .Name | relURL }}" class="glightbox gallery__item" data-gallery="spektakl">
+      <img
+        src="{{ printf "/%s/%s" $galleryPath .Name | relURL }}"
+        alt="{{ $alt }}"
+        loading="lazy"
+        class="gallery__img"
+      >
+    </a>
+    {{ end }}
+  {{ end }}
+</div>
+
+{{/* GLightbox CSS and JS */}}
+{{ $glightboxCSS := resources.Get "css/glightbox.min.css" | fingerprint }}
+<link rel="stylesheet" href="{{ $glightboxCSS.RelPermalink }}">
+
+{{ $glightboxJS := resources.Get "js/glightbox.min.js" | fingerprint }}
+<script src="{{ $glightboxJS.RelPermalink }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    GLightbox({ selector: '.glightbox' });
+  });
+</script>

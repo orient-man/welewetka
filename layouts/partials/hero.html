@@ -1,0 +1,12 @@
+<section class="hero">
+  <div class="hero__overlay">
+    <div class="hero__content container">
+      <h1 class="hero__title">{{ .Params.hero_title | default "Welewetka" }}</h1>
+      <p class="hero__subtitle">{{ .Params.hero_subtitle | default "Jak znikają Kaszuby" }}</p>
+      <div class="hero__actions">
+        <a href="{{ "spektakl/" | relURL }}" class="btn btn--primary btn--lg">O spektaklu</a>
+        <a href="{{ "zamow/" | relURL }}" class="btn btn--accent btn--lg">Zamów spektakl</a>
+      </div>
+    </div>
+  </div>
+</section>

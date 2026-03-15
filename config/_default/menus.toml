@@ -1,0 +1,39 @@
+[[main]]
+  name = "Spektakl"
+  url = "/spektakl/"
+  weight = 1
+
+[[main]]
+  name = "Książka"
+  url = "/ksiazka/"
+  weight = 2
+
+[[main]]
+  name = "Zespół"
+  url = "/zespol/"
+  weight = 3
+
+[[main]]
+  name = "Fundacja"
+  url = "/fundacja/"
+  weight = 4
+
+[[main]]
+  name = "Recenzje"
+  url = "/recenzje/"
+  weight = 5
+
+[[main]]
+  name = "Galeria"
+  url = "/galeria/"
+  weight = 6
+
+[[main]]
+  name = "Zamów spektakl"
+  url = "/zamow/"
+  weight = 7
+
+[[main]]
+  name = "Aktualności"
+  url = "/aktualnosci/"
+  weight = 8

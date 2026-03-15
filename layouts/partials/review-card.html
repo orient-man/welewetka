@@ -1,0 +1,11 @@
+<article class="review-card">
+  <blockquote class="review-card__quote">
+    <p>{{ .quote }}</p>
+  </blockquote>
+  <div class="review-card__attribution">
+    <cite class="review-card__author">{{ .author }}</cite>
+    {{ with .source }}
+    <span class="review-card__source">{{ . }}</span>
+    {{ end }}
+  </div>
+</article>

@@ -1,0 +1,6 @@
+{{/* CTA Button shortcode */}}
+{{ $text := .Get "text" | default "Kontakt" }}
+{{ $href := .Get "href" | default "#" }}
+<div class="cta-wrapper">
+  <a href="{{ $href }}" class="btn btn--accent btn--lg cta-button">{{ $text }}</a>
+</div>

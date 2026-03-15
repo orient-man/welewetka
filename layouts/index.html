@@ -1,0 +1,82 @@
+{{ define "main" }}
+
+{{/* Hero section */}}
+{{ partial "hero.html" . }}
+
+{{/* Wave separator */}}
+{{ partial "wave-separator.html" (dict "flip" false "colorTop" "transparent" "colorBottom" "var(--color-bg-alt)") }}
+
+{{/* Quotes / Reviews section */}}
+<section class="section section--alt">
+  <div class="container">
+    <h2 class="text-center mb-2xl">Co mówią o Welewetce</h2>
+    <div class="reviews-grid">
+      {{ range .Params.featured_reviews }}
+        {{ partial "review-card.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{/* Wave separator */}}
+{{ partial "wave-separator.html" (dict "flip" true "colorTop" "var(--color-bg-alt)" "colorBottom" "var(--color-bg)") }}
+
+{{/* Upcoming events section */}}
+<section class="section">
+  <div class="container">
+    <h2 class="text-center mb-2xl">Najbliższe terminy</h2>
+    {{ $upcoming := where (where site.RegularPages "Section" "aktualnosci") ".Params.tags" "intersect" (slice "terminarz") }}
+    {{ $upcoming = sort $upcoming "Date" "asc" }}
+    {{ $now := now }}
+    {{ $futureEvents := where $upcoming "Date" "ge" $now }}
+    {{ if $futureEvents }}
+      <div class="events-grid">
+        {{ range first 3 $futureEvents }}
+          {{ partial "event-card.html" . }}
+        {{ end }}
+      </div>
+    {{ else }}
+      <p class="text-center">Nowe terminy wkrótce. Śledź aktualności!</p>
+    {{ end }}
+    <div class="text-center mt-xl">
+      <a href="{{ "aktualnosci/" | relURL }}" class="btn btn--outline">Wszystkie aktualności</a>
+    </div>
+  </div>
+</section>
+
+{{/* Wave separator */}}
+{{ partial "wave-separator.html" (dict "flip" false "colorTop" "var(--color-bg)" "colorBottom" "var(--color-bg-alt)") }}
+
+{{/* About intro section */}}
+<section class="section section--alt">
+  <div class="container container--narrow">
+    <h2 class="text-center mb-xl">O projekcie</h2>
+    <div class="content text-center">
+      {{ .Content }}
+    </div>
+    <div class="text-center mt-xl">
+      <a href="{{ "spektakl/" | relURL }}" class="btn btn--primary">Więcej o spektaklu</a>
+    </div>
+  </div>
+</section>
+
+{{/* Wave separator */}}
+{{ partial "wave-separator.html" (dict "flip" true "colorTop" "var(--color-bg-alt)" "colorBottom" "var(--color-bg)") }}
+
+{{/* Press quotes section */}}
+<section class="section">
+  <div class="container">
+    <h2 class="text-center mb-2xl">W mediach</h2>
+    {{ range .Params.press_quotes }}
+    <blockquote class="press-quote">
+      <p>{{ .quote }}</p>
+      <cite>— {{ .author }}, <em>{{ .source }}</em></cite>
+    </blockquote>
+    {{ end }}
+    <div class="text-center mt-xl">
+      <a href="{{ "recenzje/" | relURL }}" class="btn btn--outline">Wszystkie recenzje</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

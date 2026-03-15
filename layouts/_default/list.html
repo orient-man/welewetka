@@ -1,0 +1,38 @@
+{{ define "main" }}
+<section class="section">
+  <div class="container container--narrow">
+    <header class="page__header">
+      <h1 class="page__title">{{ .Title }}</h1>
+      {{ with .Content }}
+      <div class="content mb-2xl">
+        {{ . }}
+      </div>
+      {{ end }}
+    </header>
+
+    <div class="blog-list">
+      {{ $pages := .Pages.ByDate.Reverse }}
+      {{ range $pages }}
+      <article class="blog-card">
+        <time class="blog-card__date" datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ dateFormat "2 January 2006" .Date }}
+        </time>
+        <h2 class="blog-card__title">
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h2>
+        {{ with .Summary }}
+        <p class="blog-card__summary">{{ . }}</p>
+        {{ end }}
+        {{ with .Params.tags }}
+        <div class="blog-card__tags">
+          {{ range . }}
+          <span class="blog-card__tag">{{ . }}</span>
+          {{ end }}
+        </div>
+        {{ end }}
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

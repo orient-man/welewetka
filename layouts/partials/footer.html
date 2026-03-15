@@ -1,0 +1,19 @@
+<footer class="footer">
+  <div class="footer__inner container">
+    <div class="footer__info">
+      <p class="footer__org">
+        <strong>{{ site.Params.fundacja.name }}</strong>
+      </p>
+      <p class="footer__address">{{ site.Params.fundacja.address }}</p>
+      <p class="footer__krs">KRS: {{ site.Params.fundacja.krs }}</p>
+    </div>
+    <div class="footer__contact">
+      <p>
+        <a href="mailto:{{ site.Params.email }}" class="footer__email">{{ site.Params.email }}</a>
+      </p>
+    </div>
+    <div class="footer__copy">
+      <p>&copy; {{ now.Year }} {{ site.Title }}. Wszelkie prawa zastrzeżone.</p>
+    </div>
+  </div>
+</footer>
