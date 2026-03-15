@@ -1,27 +1,76 @@
 # AGENTS.md
 
-This is an OpenSpec specification-driven development project using the OpenCode AI platform.
-There is currently no application source code — only workflow definitions and specifications.
+Hugo static website for the theatrical performance
+"Welewetka. Jak znikają Kaszuby" — a monodrama based on the book by
+Stasia Budzisz, produced by Fundacja Wiatrakcje.
 
 ## Project Structure
 
 ```
 welewetka/
-  .opencode/              # AI tooling configuration
-    command/              # Slash commands (opsx-*.md)
-    skills/               # Reusable AI skills (openspec-*/SKILL.md)
-    package.json          # Plugin dependency (@opencode-ai/plugin)
-  openspec/               # Specification content
-    config.yaml           # OpenSpec config (schema: spec-driven)
-    specs/                # Main specifications
-    changes/              # Active and archived changes
-      archive/
+  config/_default/          # Hugo configuration (TOML)
+    hugo.toml               # Base URL, language, build settings
+    menus.toml              # 8-item flat navigation
+    params.toml             # Contact, social, foundation data
+  content/                  # Markdown content pages
+    _index.md               # Homepage (hero, quotes, events)
+    spektakl.md             # Performance description
+    ksiazka.md              # Book details and reviews
+    zespol.md               # Team members (YAML frontmatter)
+    fundacja.md             # Foundation info
+    recenzje.md             # Press reviews (YAML frontmatter)
+    galeria.md              # Photo gallery
+    zamow.md                # Booking page
+    aktualnosci/            # Blog section
+  layouts/                  # Hugo templates
+    _default/               # baseof, single, list
+    index.html              # Custom homepage
+    partials/               # head, nav, footer, hero, cards, wave
+    shortcodes/             # gallery, cta-button
+  assets/
+    css/                    # CSS partials (Hugo Pipes concat)
+    js/                     # nav.js, glightbox.min.js
+  static/
+    fonts/                  # Self-hosted woff2 (Playfair Display, Source Sans 3)
+    images/galeria/         # Gallery photos
+    CNAME                   # Custom domain
+  .github/workflows/        # CI/CD
+    deploy.yml              # Hugo build + GH Pages deploy
+  .opencode/                # AI tooling configuration
+  openspec/                 # Specification content
 ```
 
 ## Build / Lint / Test
 
-No build system, test framework, or linters are configured yet.
-When application code is added, update this section.
+**Prerequisites:** Hugo extended edition (v0.144+)
+
+```bash
+# Install (macOS)
+brew install hugo
+
+# Development server
+hugo server -D
+
+# Production build
+hugo --minify
+```
+
+Output goes to `public/` (gitignored). No npm, Node, or PostCSS required.
+
+**Deployment:** Automatic via GitHub Actions on push to `main`.
+Workflow installs Hugo extended, runs `hugo --minify`, deploys to GitHub Pages.
+
+## Content Editing
+
+All content is in `content/*.md` files with YAML frontmatter.
+Team members and reviews are defined as YAML arrays in frontmatter
+of `zespol.md` and `recenzje.md` respectively.
+
+To add gallery photos: drop images into `static/images/galeria/`.
+The gallery shortcode auto-discovers them.
+
+To add blog posts: create `content/aktualnosci/YYYY-MM-DD-slug.md`
+with `title`, `date`, `summary`, and optional `tags` in frontmatter.
 
 ## Commits
 
@@ -43,15 +92,6 @@ Rules:
 - Subject line: imperative mood, lowercase, no period, max 72 chars
 - Body (optional): wrap at 80 chars, explain *why* not *what*
 - Breaking changes: add `!` after type/scope (e.g., `feat!: ...`) and include `BREAKING CHANGE:` in footer
-
-Examples:
-```
-feat(auth): add OAuth2 login flow
-fix(api): handle null response from upstream service
-docs: add AGENTS.md with project conventions
-chore: update @opencode-ai/plugin to 1.3.0
-refactor(db)!: switch from SQL to document store
-```
 
 ## OpenSpec Workflow
 
