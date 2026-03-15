@@ -2,7 +2,7 @@
 
 Strona internetowa spektaklu teatralnego "Welewetka. Jak znikają Kaszuby" — monodramu na podstawie książki reportażowej Stasi Budzisz, realizowanego przez Fundację Wiatrakcje.
 
-**Live:** [welewetka.orientman.com](https://welewetka.orientman.com)
+**Live:** [welewetka.pl](https://welewetka.pl)
 
 ## O projekcie
 

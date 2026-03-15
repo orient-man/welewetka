@@ -5,7 +5,7 @@ The system SHALL use Hugo extended edition as the static site generator with con
 
 #### Scenario: Valid Hugo configuration
 - **WHEN** Hugo reads the configuration files
-- **THEN** the site builds with baseURL `https://welewetka.orientman.com/`, language code `pl`, and Polish date formatting
+- **THEN** the site builds with baseURL `https://welewetka.pl/`, language code `pl`, and Polish date formatting
 
 ### Requirement: Directory structure
 The system SHALL follow the Hugo standard directory structure with `content/`, `layouts/`, `assets/`, `static/`, and `config/` directories at the repository root.
@@ -33,10 +33,10 @@ The system SHALL include a GitHub Actions workflow at `.github/workflows/deploy.
 - **THEN** the deployment step is skipped and the current live site remains unchanged
 
 ### Requirement: Custom domain
-The system SHALL serve the site at `welewetka.orientman.com` via a `CNAME` file in `static/` and appropriate DNS configuration.
+The system SHALL serve the site at `welewetka.pl` via a `CNAME` file in `static/` and appropriate DNS configuration.
 
 #### Scenario: Custom domain resolves
-- **WHEN** a user visits `https://welewetka.orientman.com`
+- **WHEN** a user visits `https://welewetka.pl`
 - **THEN** the site loads with HTTPS enabled via GitHub Pages
 
 ### Requirement: Git ignore
