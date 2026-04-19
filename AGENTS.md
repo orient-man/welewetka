@@ -72,6 +72,14 @@ The gallery shortcode auto-discovers them.
 To add blog posts: create `content/aktualnosci/YYYY-MM-DD-slug.md`
 with `title`, `date`, `summary`, and optional `tags` in frontmatter.
 
+For event announcements, also add:
+- `event_date: YYYY-MM-DD` — the date of the event (used for homepage
+  "Najbliższe terminy" filtering; `date` is the publication date)
+- `venue: "Venue name"` — displayed on event cards
+- tag `terminarz` — required for the post to appear in upcoming events
+
+Use `{{</* cta-button text="Label" href="URL" */>}}` for ticket links.
+
 ## Commits
 
 Use **Conventional Commits** (<https://www.conventionalcommits.org/>).
