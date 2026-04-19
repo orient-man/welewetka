@@ -1,6 +1,7 @@
 ---
 title: "Spektakl w Sierakowicach — 21 listopada 2025"
 date: 2025-11-21
+event_date: 2025-11-21
 summary: "Welewetka zagościła w Sierakowicach. Kolejne przedstawienie monodramu o znikających Kaszubach."
 tags:
   - terminarz

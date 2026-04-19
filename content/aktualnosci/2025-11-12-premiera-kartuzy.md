@@ -1,6 +1,7 @@
 ---
 title: "Premiera w Kartuzach — 12 listopada 2025"
 date: 2025-11-12
+event_date: 2025-11-12
 summary: "Premiera spektaklu 'Welewetka. Jak znikają Kaszuby' w Kartuskim Centrum Kultury. Sala wypełniona po brzegi, owacja na stojąco."
 tags:
   - terminarz

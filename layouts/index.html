@@ -25,10 +25,15 @@
 <section class="section">
   <div class="container">
     <h2 class="text-center mb-2xl">Najbliższe terminy</h2>
-    {{ $upcoming := where (where site.RegularPages "Section" "aktualnosci") ".Params.tags" "intersect" (slice "terminarz") }}
-    {{ $upcoming = sort $upcoming "Date" "asc" }}
+    {{ $tagged := where (where site.RegularPages "Section" "aktualnosci") ".Params.tags" "intersect" (slice "terminarz") }}
+    {{ $tagged = sort $tagged ".Params.event_date" "asc" }}
     {{ $now := now }}
-    {{ $futureEvents := where $upcoming "Date" "ge" $now }}
+    {{ $futureEvents := slice }}
+    {{ range $tagged }}
+      {{ if ge (time .Params.event_date) $now }}
+        {{ $futureEvents = $futureEvents | append . }}
+      {{ end }}
+    {{ end }}
     {{ if $futureEvents }}
       <div class="events-grid">
         {{ range first 3 $futureEvents }}
