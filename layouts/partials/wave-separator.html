@@ -1,5 +1,20 @@
-<div class="wave-separator{{ if .flip }} wave-separator--flip{{ end }}">
-  <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z" fill="{{ .colorBottom }}"/>
+{{/* Net/horizon separator — a thin horizon line with a sparse net-diamond
+     band and amber floats, echoing the hero's dissolving-net motif.
+     Params: flip (bool) mirrors the band vertically. */}}
+<div class="net-separator{{ if .flip }} net-separator--flip{{ end }}" aria-hidden="true">
+  <svg viewBox="0 0 1440 48" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    {{/* horizon line */}}
+    <line x1="0" y1="24" x2="1440" y2="24" stroke="var(--color-border)" stroke-width="1"/>
+    {{/* net diamonds sitting on the horizon */}}
+    <g stroke="var(--color-secondary)" stroke-width="1" fill="none" opacity="0.55">
+      <path d="M120,24 l16,-12 l16,12 l-16,12 Z M152,24 l16,-12 l16,12 l-16,12 Z M184,24 l16,-12 l16,12 l-16,12 Z"/>
+      <path d="M1088,24 l16,-12 l16,12 l-16,12 Z M1120,24 l16,-12 l16,12 l-16,12 Z M1152,24 l16,-12 l16,12 l-16,12 Z"/>
+    </g>
+    {{/* amber floats */}}
+    <g fill="var(--color-accent)">
+      <circle cx="708" cy="24" r="4"/>
+      <circle cx="732" cy="24" r="3"/>
+      <circle cx="684" cy="24" r="3"/>
+    </g>
   </svg>
 </div>

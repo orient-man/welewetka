@@ -1,21 +1,25 @@
 /* ==========================================================================
-   Variables — morsko-kaszubska color palette, font stacks, breakpoints
+   Variables — "Reportaż morski" palette, font registers, broadsheet geometry
+   Identity from the book cover (steel-sea blue, amber net floats, paper);
+   discipline (square corners, hairlines) from editorial/broadsheet systems.
    ========================================================================== */
 
 :root {
-  /* Colors */
-  --color-bg: #FAFAF7;
-  --color-bg-alt: #F0E9DD;
-  --color-primary: #1B3A5C;
-  --color-secondary: #4A7C9B;
-  --color-accent: #C17B3A;
-  --color-text: #2C2C2C;
-  --color-text-light: #5A5A5A;
-  --color-border: #D4CFC5;
+  /* Colors — realigned to the book cover */
+  --color-bg: #FAF6EC;          /* paper-soft — page canvas */
+  --color-bg-alt: #F2EBD8;      /* cream — reading bands */
+  --color-primary: #1B3A5C;     /* deep navy — dark hero, footer, wordmark on light */
+  --color-secondary: #3E7B9C;   /* sea — links, hover, eyebrows, hairline tint */
+  --color-accent: #E8B84B;      /* amber/mustard (cover floats) — the single signal color */
+  --color-text: #22201C;        /* ink */
+  --color-text-light: #5A554C;  /* muted ink — metadata, captions */
+  --color-border: #C9C2B2;      /* hairline */
   --color-white: #FFFFFF;
 
-  /* Typography */
+  /* Typography — three registers + structural sans */
+  --font-poster: 'Anton', 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif;
   --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-serif-body: 'Source Serif 4', Georgia, 'Times New Roman', serif;
   --font-body: 'Source Sans 3', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 
   /* Font sizes */
@@ -50,13 +54,15 @@
   --transition-fast: 150ms ease;
   --transition-base: 300ms ease;
 
-  /* Shadows */
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  /* Elevation — broadsheet uses hairlines, not shadows.
+     Shadow tokens neutralized; kept as no-ops so any stray reference
+     resolves to "none" rather than a SaaS-style drop-shadow. */
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
 
-  /* Border radius */
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
+  /* Border radius — square corners (broadsheet) */
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
 }

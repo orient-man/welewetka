@@ -16,12 +16,33 @@
 }
 
 .section {
-  padding-top: var(--space-3xl);
-  padding-bottom: var(--space-3xl);
+  padding-top: var(--space-4xl);
+  padding-bottom: var(--space-4xl);
 }
 
 .section--alt {
   background-color: var(--color-bg-alt);
+}
+
+/* Broadsheet section heading — amber kicker rule above an h2 */
+.section h2 {
+  position: relative;
+  padding-top: var(--space-md);
+}
+
+.section h2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 3px;
+  background-color: var(--color-accent);
+}
+
+.section h2.text-center::before {
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .grid {

@@ -31,13 +31,14 @@ welewetka/
     css/                    # CSS partials (Hugo Pipes concat)
     js/                     # nav.js, glightbox.min.js
   static/
-    fonts/                  # Self-hosted woff2 (Playfair Display, Source Sans 3)
+    fonts/                  # Self-hosted woff2 (Anton, Playfair Display, Source Serif 4, Source Sans 3)
     images/galeria/         # Gallery photos
     CNAME                   # Custom domain
   .github/workflows/        # CI/CD
     deploy.yml              # Hugo build + GH Pages deploy
   .opencode/                # AI tooling configuration
   openspec/                 # Specification content
+  DESIGN.md                 # "Reportaż morski" design system (source of truth)
 ```
 
 ## Build / Lint / Test
@@ -79,6 +80,28 @@ For event announcements, also add:
 - tag `terminarz` — required for the post to appear in upcoming events
 
 Use `{{</* cta-button text="Label" href="URL" */>}}` for ticket links.
+
+## Design System
+
+The site's visual language — **"Reportaż morski"** — is documented in
+[`DESIGN.md`](DESIGN.md) at the project root. **Read it before any UI, CSS,
+or layout change.** It is the single source of truth for the color palette,
+typography registers, components, and broadsheet rules, and must stay in sync
+with `assets/css/_variables.css`.
+
+Key constraints:
+- Self-hosted fonts only — no Google Fonts or external CDN. Add new faces as
+  woff2 (latin + latin-ext for Polish diacritics) and declare `@font-face`
+  (`font-display: swap`) in `layouts/partials/head.html`.
+- Pure CSS, no framework. Square corners + 1px hairlines — no border-radius,
+  no drop-shadows (the `--radius-*` and `--shadow-*` tokens resolve to `0`/`none`).
+- Amber `--color-accent` (`#E8B84B`) is a rare signal color (primary CTA, lede
+  drop cap, footer rule, section tick, net floats) — never body-text background.
+- CTA labels on amber use ink/navy text, never white (WCAG AA).
+
+Pipeline note: CSS partials are concatenated **explicitly** in
+`layouts/partials/head.html` via `resources.Concat` (not `@import`), so any new
+`assets/css/_*.css` file must be added to that slice to take effect.
 
 ## Commits
 

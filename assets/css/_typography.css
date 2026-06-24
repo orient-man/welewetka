@@ -1,5 +1,9 @@
 /* ==========================================================================
-   Typography — headings, body text, blockquotes, links
+   Typography — three-register system:
+     poster (Anton)        → wordmark / hero display       (set in _hero.css)
+     heading (Playfair)    → section headings h1–h6
+     serif body (Source Serif 4) → lede + pull-quotes (reportage voice)
+     sans (Source Sans 3)  → nav, metadata, eyebrows, buttons, body copy
    ========================================================================== */
 
 body {
@@ -41,27 +45,34 @@ p {
   line-height: 1.7;
 }
 
+/* Links — sea family, but use navy for the text color so body links
+   meet WCAG AA on paper (#3E7B9C is only 4.31:1; navy is 10.8:1);
+   the sea secondary shows on hover/underline as the accent register. */
 a {
-  color: var(--color-secondary);
+  color: var(--color-primary);
   text-decoration: underline;
+  text-decoration-color: var(--color-secondary);
   text-decoration-thickness: 1px;
   text-underline-offset: 2px;
-  transition: color var(--transition-fast);
+  transition: color var(--transition-fast), text-decoration-color var(--transition-fast);
 }
 
 a:hover,
 a:focus {
-  color: var(--color-primary);
+  color: var(--color-secondary);
+  text-decoration-color: var(--color-accent);
 }
 
+/* Blockquote — broadsheet: amber rule, square, cream band */
 blockquote {
-  border-left: 4px solid var(--color-accent);
+  border-left: 3px solid var(--color-accent);
   padding: var(--space-md) var(--space-lg);
   margin: var(--space-xl) 0;
   background-color: var(--color-bg-alt);
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  border-radius: 0;
+  font-family: var(--font-serif-body);
   font-style: italic;
-  color: var(--color-text-light);
+  color: var(--color-text);
 }
 
 blockquote p:last-child {
@@ -74,6 +85,83 @@ strong {
 
 em {
   font-style: italic;
+}
+
+/* ==========================================================================
+   Reportage lede — opening paragraph with amber drop cap
+   ========================================================================== */
+
+.lede {
+  font-family: var(--font-serif-body);
+  font-size: var(--text-xl);
+  line-height: 1.65;
+  color: var(--color-text);
+}
+
+.lede::first-letter {
+  float: left;
+  font-family: var(--font-poster);
+  font-weight: 400;
+  font-size: 3.8em;
+  line-height: 0.78;
+  padding: 0.05em 0.12em 0 0;
+  margin-right: 0.04em;
+  color: var(--color-accent);
+  text-transform: uppercase;
+}
+
+/* Homepage about-intro: first paragraph renders as a reportage lede */
+.intro-content > p:first-of-type {
+  font-family: var(--font-serif-body);
+  font-size: var(--text-xl);
+  line-height: 1.65;
+  color: var(--color-text);
+}
+
+.intro-content > p:first-of-type::first-letter {
+  float: left;
+  font-family: var(--font-poster);
+  font-weight: 400;
+  font-size: 3.8em;
+  line-height: 0.78;
+  padding: 0.05em 0.12em 0 0;
+  margin-right: 0.04em;
+  color: var(--color-accent);
+  text-transform: uppercase;
+}
+
+/* Remaining intro paragraphs in serif for reportage continuity */
+.intro-content > p {
+  font-family: var(--font-serif-body);
+  line-height: 1.7;
+}
+
+/* ==========================================================================
+   Pull-quote typography — serif quote + uppercase sans byline/source
+   ========================================================================== */
+
+.pull-quote__text {
+  font-family: var(--font-serif-body);
+  font-size: var(--text-xl);
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+.pull-quote__byline {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.pull-quote__source {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
 }
 
 .content ul,
@@ -96,7 +184,7 @@ em {
 }
 
 .content img {
-  border-radius: var(--radius-md);
+  border-radius: 0;
   margin: var(--space-xl) 0;
 }
 
@@ -107,6 +195,6 @@ hr {
 }
 
 ::selection {
-  background-color: var(--color-secondary);
-  color: var(--color-white);
+  background-color: var(--color-accent);
+  color: var(--color-text);
 }
