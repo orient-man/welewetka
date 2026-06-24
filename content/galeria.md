@@ -6,4 +6,4 @@ subtitle: "Zdjęcia ze spektaklu"
 
 {{< gallery >}}
 
-*Zdjęcia: Jizabela Szwertfeger, Magda Dzienisz*
+*Zdjęcia: Izabela Szwertfeger, Magda Dzienisz*

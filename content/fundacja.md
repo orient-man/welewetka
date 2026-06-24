@@ -21,7 +21,7 @@ Celem Fundacji Wiatrakcje jest promowanie kultury kaszubskiej i pomorskiej poprz
 
 ## Dofinansowanie
 
-Projekt „Welewetka. Jak znikają Kaszuby" został dofinansowany ze środków **Instytutu Różnorodności Językowej RP** przy **Ministerstwie Kultury i Dziedzictwa Narodowego**.
+Projekt „Welewetka. Jak znikają Kaszuby" dofinansowano ze środków **Ministra Kultury i Dziedzictwa Narodowego** w ramach programu dotacyjnego „**Różnorodność Językowa**" **Instytutu Różnorodności Językowej Rzeczypospolitej**.
 
 ## Kontakt
 

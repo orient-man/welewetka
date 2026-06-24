@@ -14,9 +14,10 @@ reviews:
   - quote: "Monodram pełen emocji — Aleksandra Długosz w brawurowej roli jedynej aktorki na scenie prowadzi widza przez historię Kaszubów z wrażliwością i siłą. Muzyka na żywo dopełnia całość."
     author: "Lucyna Puzdrowska"
     source: "Zawsze Pomorze"
+    url: "https://www.zawszepomorze.pl/artykul/23115,welewetka-stasi-budzisz-ozyla-w-teatralnej-odslonie-krok-po-kroku-odslaniajac-trudna-historie"
 
   - quote: "To nie jest kolejna opowieść o ginącym świecie. To krzyk, który dociera do serca. Welewetka zmusza do pytania: co my robimy z naszym dziedzictwem?"
-    author: "Gracjana Potrękus"
+    author: "Gracjana Potrykus"
     source: "Pomerania"
 
   - quote: "Spektakl poruszył mnie do głębi. Każdy Kaszub powinien to zobaczyć. To ważne, żebyśmy pamiętali, skąd przychodzimy."

@@ -17,7 +17,7 @@ featured_reviews:
 
 press_quotes:
   - quote: "To nie jest kolejna opowieść o ginącym świecie. To krzyk, który dociera do serca."
-    author: "Gracjana Potrękus"
+    author: "Gracjana Potrykus"
     source: "Pomerania"
   - quote: "Spektakl poruszył mnie do głębi. Każdy Kaszub powinien to zobaczyć."
     author: "Mieczysław Gołuński"

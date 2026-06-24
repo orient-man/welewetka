@@ -18,4 +18,4 @@ Po przedstawieniu odbyło się spotkanie z twórcami, podczas którego widzowie 
 > *„Spektakl poruszył mnie do głębi. Każdy Kaszub powinien to zobaczyć."*
 > — Mieczysław Gołuński, Burmistrz Kartuz
 
-Premiera została dofinansowana ze środków Instytutu Różnorodności Językowej RP przy Ministerstwie Kultury i Dziedzictwa Narodowego.
+Spektakl dofinansowano ze środków Ministra Kultury i Dziedzictwa Narodowego w ramach programu dotacyjnego „Różnorodność Językowa" Instytutu Różnorodności Językowej Rzeczypospolitej.

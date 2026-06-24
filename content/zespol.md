@@ -4,12 +4,12 @@ description: "Zespół twórczy spektaklu Welewetka. Jak znikają Kaszuby."
 subtitle: "Ludzie, którzy tworzą Welewetke"
 team:
   - name: Aleksandra Engler-Malinowska
-    role: Pomysłodawczyni, współautorka scenariusza
+    role: Pomysłodawczyni, współautorka scenariusza, głos z offu
     bio: >
       Inicjatorka projektu artystycznego Welewetka. Współautorka scenariusza
-      teatralnego, łączy swoją pasję do kaszubskiej kultury z doświadczeniem
-      w realizacji projektów artystycznych. Córka Ireneusza Englera, reżysera
-      dokumentu Ojcowizna.
+      teatralnego i głos z offu w spektaklu, łączy swoją pasję do kaszubskiej
+      kultury z doświadczeniem w realizacji projektów artystycznych. Córka
+      Ireneusza Englera, reżysera dokumentu Ojcowizna.
 
   - name: Ewelina Kaufmann
     role: Reżyserka
@@ -33,24 +33,30 @@ team:
       spektaklu. Kaszubka, reporterka, pisarka.
 
   - name: Weronika Korthals
-    role: Muzyka
+    role: Śpiew
     bio: >
-      Autorka muzyki do spektaklu, wykonuje ją na żywo podczas każdego
-      przedstawienia. Muzyka buduje emocjonalny krajobraz monodramu —
+      Wykonuje na żywo partie wokalne podczas każdego przedstawienia.
+      Jej śpiew buduje emocjonalny krajobraz monodramu —
       od nostalgii po nadzieję.
 
   - name: Paweł A. Nowak
-    role: Akordeon
+    role: Muzyka (akordeon)
     bio: >
-      Akordeonista towarzyszący spektaklowi na żywo. Dźwięk akordeonu
-      przywołuje atmosferę kaszubskich wsi i rodzinnych spotkań, dodając
-      spektaklowi autentyczności.
+      Autor muzyki do spektaklu, towarzyszy przedstawieniu na żywo na akordeonie.
+      Dźwięk akordeonu przywołuje atmosferę kaszubskich wsi i rodzinnych spotkań,
+      dodając spektaklowi autentyczności.
 
   - name: Milena Michalik-Sosulska
     role: Kostiumy
     bio: >
       Projektantka kostiumów, która zadbała o wizualną stronę monodramu.
       Kostiumy łączą współczesność z nawiązaniami do kaszubskiej tradycji.
+
+  - name: Klaudiusz Kaufmann
+    role: Interpretacja głosowa listu
+    bio: >
+      Aktor, który użyczył głosu w spektaklu, czytając fragment listu.
+      Jego interpretacja wzmacnia emocjonalny wymiar opowieści.
 ---
 
-Spektakl **Welewetka** to efekt pracy zespołu siedmiu osób, które łączy wspólna pasja — opowiadanie historii Kaszub przez sztukę. Każda z nich wnosi do projektu unikalne umiejętności i perspektywę.
+Spektakl **Welewetka** to efekt pracy zespołu ośmiu osób, które łączy wspólna pasja — opowiadanie historii Kaszub przez sztukę. Każda z nich wnosi do projektu unikalne umiejętności i perspektywę.
