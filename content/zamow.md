@@ -14,7 +14,6 @@ Spektakl jest kameralny i elastyczny — sprawdza się zarówno w dużych salach
 
 - Monodram teatralny (ok. 1,5 godziny, bez przerwy)
 - 1 aktorka na scenie
-- Muzyka na żywo (1–2 muzyków)
 - Kompletna oprawa sceniczna
 - Możliwość spotkania z twórcami po spektaklu
 
@@ -24,6 +23,7 @@ Spektakl jest kameralny i elastyczny — sprawdza się zarówno w dużych salach
 - Dostęp do prądu
 - Podstawowe oświetlenie sceniczne
 - Nagłośnienie (mikrofon + kolumny)
+- Rzutnik oraz ekran
 - Garderoba dla artystów
 
 Szczegółowe wymagania techniczne ustalamy indywidualnie — dostosowujemy się do warunków miejsca.
