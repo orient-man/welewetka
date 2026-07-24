@@ -2,6 +2,7 @@
 title: "Recenzje"
 description: "Recenzje i reakcje na spektakl Welewetka. Jak znikają Kaszuby."
 subtitle: "Co mówią o Welewetce"
+draft: true
 reviews:
   - quote: "Spektakl jest poruszający — zmusza do refleksji nad tym, co tracimy, gdy umiera język i kultura. Aleksandra Długosz wciąga widza w świat, który dosłownie znika na naszych oczach."
     author: "Grzegorz Wysocki"

@@ -19,16 +19,6 @@ Budzisz, sama Kaszubka, wraca do krainy dzieciństwa i rozmawia z ludźmi, któr
 - **Liczba stron:** 304
 - **ISBN:** 9788367891387
 
-## Co piszą o książce
-
-> *„Budzisz pisze z czułością, ale bez sentymentalizmu. Pokazuje Kaszuby nie jako skansen, lecz jako żywy organizm, który walczy o przetrwanie."*
->
-> — **Grzegorz Wysocki**, Gazeta.pl
-
-> *„Welewetka to reportaż, który czyta się jak powieść. Autorka ma talent do wydobywania z rozmówców tego, co najcenniejsze — autentycznych emocji."*
->
-> — **Agata Kasprolewicz**, Raport o książkach
-
 ## Kup książkę
 
 Książkę można zamówić bezpośrednio w [Wydawnictwie Poznańskim](https://wydawnictwopoznanskie.pl/) lub w księgarniach stacjonarnych i internetowych.

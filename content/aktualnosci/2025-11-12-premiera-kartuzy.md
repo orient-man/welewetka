@@ -15,7 +15,4 @@ Monodram na podstawie książki Stasi Budzisz, w reżyserii Eweliny Kaufmann, z 
 
 Po przedstawieniu odbyło się spotkanie z twórcami, podczas którego widzowie dzielili się swoimi emocjami i wspomnieniami o znikającym świecie Kaszub.
 
-> *„Spektakl poruszył mnie do głębi. Każdy Kaszub powinien to zobaczyć."*
-> — Mieczysław Gołuński, Burmistrz Kartuz
-
 Spektakl dofinansowano ze środków Ministra Kultury i Dziedzictwa Narodowego w ramach programu dotacyjnego „Różnorodność Językowa" Instytutu Różnorodności Językowej Rzeczypospolitej.
