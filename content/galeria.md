@@ -6,4 +6,4 @@ subtitle: "Zdjęcia ze spektaklu"
 
 {{< gallery >}}
 
-*Zdjęcia: Izabela Szwertfeger, Magda Dzienisz*
+*Zdjęcia: Mikołaj Słoński*
