@@ -3,5 +3,8 @@
     <h3 class="team-card__name">{{ .name }}</h3>
     <p class="team-card__role">{{ .role }}</p>
     <p class="team-card__bio">{{ .bio }}</p>
+    {{ with .wikipedia_url }}
+    <a class="team-card__link" href="{{ . }}" target="_blank" rel="noopener noreferrer">Biogram w Wikipedii</a>
+    {{ end }}
   </div>
 </article>

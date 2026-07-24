@@ -13,6 +13,7 @@ team:
 
   - name: Ewelina Kaufmann
     role: Reżyserka
+    wikipedia_url: https://pl.wikipedia.org/wiki/Ewelina_Kaufmann
     bio: >
       Reżyserka spektaklu, odpowiedzialna za spójną wizję artystyczną monodramu.
       Połączyła reporterski materiał książki z formą teatralną, tworząc kameralną,
@@ -34,6 +35,7 @@ team:
 
   - name: Weronika Korthals
     role: Śpiew
+    wikipedia_url: https://pl.wikipedia.org/wiki/Weronika_Korthals
     bio: >
       Wykonuje na żywo partie wokalne podczas każdego przedstawienia.
       Jej śpiew buduje emocjonalny krajobraz monodramu —
@@ -41,6 +43,7 @@ team:
 
   - name: Paweł A. Nowak
     role: Muzyka (akordeon)
+    wikipedia_url: https://pl.wikipedia.org/wiki/Pawe%C5%82_Nowak_(akordeonista)
     bio: >
       Autor muzyki do spektaklu, towarzyszy przedstawieniu na żywo na akordeonie.
       Dźwięk akordeonu przywołuje atmosferę kaszubskich wsi i rodzinnych spotkań,
@@ -54,6 +57,7 @@ team:
 
   - name: Klaudiusz Kaufmann
     role: Interpretacja głosowa listu
+    wikipedia_url: https://pl.wikipedia.org/wiki/Klaudiusz_Kaufmann
     bio: >
       Aktor, który użyczył głosu w spektaklu, czytając fragment listu.
       Jego interpretacja wzmacnia emocjonalny wymiar opowieści.

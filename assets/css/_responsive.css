@@ -64,6 +64,24 @@
   margin-bottom: 0;
 }
 
+.team-card__link {
+  display: inline-block;
+  margin-top: var(--space-md);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-color: var(--color-secondary);
+  text-underline-offset: 0.2em;
+}
+
+.team-card__link:hover {
+  color: var(--color-secondary);
+}
+
 .cta-wrapper {
   text-align: center;
   margin: var(--space-2xl) 0;
