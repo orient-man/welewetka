@@ -11,6 +11,13 @@ team:
       kultury z doświadczeniem w realizacji projektów artystycznych. Córka
       Ireneusza Englera, reżysera dokumentu Ojcowizna.
 
+  - name: Weronika Knopik
+    role: Prezeska Fundacji Wiatrakcje
+    bio: >
+      Odpowiada za rozwój i realizację projektu, łącząc działania edukacyjne,
+      kulturalne i społeczne. Dba o współpracę z partnerami oraz lokalną
+      społecznością.
+
   - name: Ewelina Kaufmann
     role: Reżyserka
     wikipedia_url: https://pl.wikipedia.org/wiki/Ewelina_Kaufmann
@@ -63,4 +70,4 @@ team:
       Jego interpretacja wzmacnia emocjonalny wymiar opowieści.
 ---
 
-Spektakl **Welewetka** to efekt pracy zespołu ośmiu osób, które łączy wspólna pasja — opowiadanie historii Kaszub przez sztukę. Każda z nich wnosi do projektu unikalne umiejętności i perspektywę.
+Spektakl **Welewetka** to efekt pracy zespołu dziewięciu osób, które łączy wspólna pasja — opowiadanie historii Kaszub przez sztukę. Każda z nich wnosi do projektu unikalne umiejętności i perspektywę.
