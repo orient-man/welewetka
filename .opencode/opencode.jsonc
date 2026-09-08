@@ -1,7 +1,7 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "openai/gpt-5.5",
-  "small_model": "openai/gpt-5.4-mini",
+  "model": "openai/gpt-5.6-sol",
+  "small_model": "openai/gpt-5.6-luna",
   "enabled_providers": [
     "github-copilot",
     "openai",
@@ -15,6 +15,7 @@
     }
   },
   "mcp": {
+    "grep": { "enabled": true },
     "playwright": { "enabled": true }
   }
 }

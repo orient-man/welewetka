@@ -37,6 +37,8 @@ welewetka/
   .github/workflows/        # CI/CD
     deploy.yml              # Hugo build + GH Pages deploy
   .opencode/                # AI tooling configuration
+    commands/               # OpenSpec slash commands
+    skills/                 # Reusable OpenSpec workflow skills
   openspec/                 # Specification content
   DESIGN.md                 # "Reportaż morski" design system (source of truth)
 ```
@@ -126,18 +128,20 @@ Rules:
 
 ## OpenSpec Workflow
 
-This project uses a spec-driven workflow with four commands:
+This project uses a spec-driven workflow with six commands:
 
-| Command           | Purpose                                  |
-|-------------------|------------------------------------------|
-| `/opsx-propose`   | Create a new change with design and tasks |
-| `/opsx-apply`     | Implement tasks from a change            |
-| `/opsx-explore`   | Investigate and clarify before/during work |
-| `/opsx-archive`   | Archive a completed change               |
+| Command           | Purpose                                             |
+|-------------------|-----------------------------------------------------|
+| `/opsx-propose`   | Create a new change with design and tasks            |
+| `/opsx-apply`     | Implement tasks from a change                       |
+| `/opsx-explore`   | Investigate and clarify before/during work           |
+| `/opsx-update`    | Revise existing planning artifacts without code     |
+| `/opsx-sync`      | Sync delta specs to main specs without archiving    |
+| `/opsx-archive`   | Sync specs and archive a completed change           |
 
 ### Authoring Conventions
 
-**Commands** (`.opencode/command/opsx-*.md`):
+**Commands** (`.opencode/commands/opsx-*.md`):
 - Minimal YAML frontmatter: `description` only
 - Structure: Summary > Input > Steps > Output > Guardrails
 
@@ -150,7 +154,7 @@ This project uses a spec-driven workflow with four commands:
 - Change names: `kebab-case` (e.g., `add-user-auth`)
 - Archive dirs: `YYYY-MM-DD-<change-name>`
 - Spec files: `kebab-case.md` (e.g., `proposal.md`, `design.md`, `tasks.md`)
-- CLI pattern: `openspec <verb> [--change "<name>"] [--json]`
+- CLI pattern: `openspec <verb> [--change "<name>"] [--json] [--store "<id>"]`
 
 ### Guardrails
 
