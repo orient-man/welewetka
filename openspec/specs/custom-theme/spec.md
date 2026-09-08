@@ -33,11 +33,11 @@ The system SHALL render a flat navigation bar with 8 items visible on desktop (>
 - **THEN** navigation items are hidden behind a hamburger icon, revealed on tap/click
 
 ### Requirement: Homepage — custom layout
-The system SHALL provide a custom `layouts/index.html` for the homepage with sections: hero (full-width image + title + CTA), quotes, upcoming events, about intro, press quotes, and footer.
+The system SHALL provide a custom `layouts/index.html` for the homepage with sections: hero, verified review quotes, upcoming events, about intro, and footer.
 
 #### Scenario: Homepage displays all sections
 - **WHEN** a user visits the homepage
-- **THEN** they see hero, quotes, upcoming events, intro text, press quotes, and footer in that order
+- **THEN** they see hero, review quotes with a link to `/recenzje/`, upcoming events, intro text, and footer in that order
 
 ### Requirement: Single page layout
 The system SHALL provide a `single.html` layout rendering Markdown content with styled headings, paragraphs, lists, blockquotes, and images.

@@ -29,11 +29,11 @@ The system SHALL provide a page at `/fundacja/` with information about Fundacja 
 - **THEN** they see the foundation's name, mission, leadership, funding information, and contact details
 
 ### Requirement: Recenzje page with YAML data
-The system SHALL provide a page at `/recenzje/` with press reviews and audience reactions defined in YAML frontmatter. Each review SHALL include a quote, author name, and source. Reviews SHALL include: Grzegorz Wysocki (Gazeta.pl), Agata Kasprolewicz (Raport o książkach), Lucyna Puzdrowska (Zawsze Pomorze), Gracjana Potrękus (Pomerania), and reaction of Kartuzy mayor Mieczysław Gołuński.
+The system SHALL provide a page at `/recenzje/` with verified press quotes defined in YAML frontmatter. Each review SHALL include a quote, author name, source, and source URL. Reviews SHALL include: Izabela Szwertfeger (Kartuzy.info), Lucyna Puzdrowska (Zawsze Pomorze), and Lucyna Puzdrowska (e-teatr.pl reprint from Zawsze Pomorze).
 
 #### Scenario: Recenzje page displays quotes
 - **WHEN** a user visits `/recenzje/`
-- **THEN** they see styled blockquote cards for each review with attribution
+- **THEN** they see three styled blockquote cards with attribution and links to the source publications
 
 ### Requirement: Galeria page
 The system SHALL provide a page at `/galeria/` displaying photos from the performance in a responsive grid with lightbox functionality.

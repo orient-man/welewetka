@@ -2,28 +2,21 @@
 title: "Recenzje"
 description: "Recenzje i reakcje na spektakl Welewetka. Jak znikają Kaszuby."
 subtitle: "Co mówią o Welewetce"
-draft: true
 reviews:
-  - quote: "Spektakl jest poruszający — zmusza do refleksji nad tym, co tracimy, gdy umiera język i kultura. Aleksandra Długosz wciąga widza w świat, który dosłownie znika na naszych oczach."
-    author: "Grzegorz Wysocki"
-    source: "Gazeta.pl"
+  - quote: "„Welewetka - jak znikają Kaszuby” to monodram, który łączy osobiste historie z refleksją nad przemijaniem i pamięcią. To artystyczny hołd dla tych, którzy szukają odpowiedzi na pytanie, kim są - i skąd pochodzą."
+    author: "Izabela Szwertfeger"
+    source: "Kartuzy.info"
+    url: "https://kartuzy.info/artykul/kobiety-ktore-opowiadaja-n1762079"
 
-  - quote: "Welewetka to opowieść o pamięci i tożsamości, która nie zostawia obojętnym. Spektakl w kameralnej formie monodramu trafia prosto w serce."
-    author: "Agata Kasprolewicz"
-    source: "Raport o książkach"
-
-  - quote: "Monodram pełen emocji — Aleksandra Długosz w brawurowej roli jedynej aktorki na scenie prowadzi widza przez historię Kaszubów z wrażliwością i siłą. Muzyka na żywo dopełnia całość."
+  - quote: "Ten spektakl nie jest pomnikiem dla Kaszubów, ale... iskrą, która ma rozpalać emocje, refleksje, wątpliwości."
     author: "Lucyna Puzdrowska"
     source: "Zawsze Pomorze"
     url: "https://www.zawszepomorze.pl/artykul/23115,welewetka-stasi-budzisz-ozyla-w-teatralnej-odslonie-krok-po-kroku-odslaniajac-trudna-historie"
 
-  - quote: "To nie jest kolejna opowieść o ginącym świecie. To krzyk, który dociera do serca. Welewetka zmusza do pytania: co my robimy z naszym dziedzictwem?"
-    author: "Gracjana Potrykus"
-    source: "Pomerania"
-
-  - quote: "Spektakl poruszył mnie do głębi. Każdy Kaszub powinien to zobaczyć. To ważne, żebyśmy pamiętali, skąd przychodzimy."
-    author: "Mieczysław Gołuński"
-    source: "Burmistrz Kartuz"
+  - quote: "To mocna opowieść, która nie daje gotowych odpowiedzi, ale stawia trudne pytania na temat kaszubskiej tożsamości i historii, dotykając w widzach tego, co w nich najgłębsze."
+    author: "Lucyna Puzdrowska"
+    source: "e-teatr.pl (za Zawsze Pomorze)"
+    url: "https://e-teatr.pl/gdansk-monodram-welewetka-jak-znikaja-kaszuby-w-muzeum-ii-wojny-swiatowej-68689"
 ---
 
-Spektakl **Welewetka. Jak znikają Kaszuby** od premiery w listopadzie 2025 roku wzbudza żywe reakcje wśród publiczności i recenzentów. Poniżej prezentujemy wybrane opinie z prasy i wypowiedzi widzów.
+Spektakl **Welewetka. Jak znikają Kaszuby** od premiery w listopadzie 2025 roku wzbudza żywe reakcje wśród publiczności i recenzentów. Poniżej prezentujemy wybrane głosy z publikacji poświęconych spektaklowi.

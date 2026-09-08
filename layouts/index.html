@@ -7,7 +7,6 @@
 {{ partial "wave-separator.html" (dict "flip" false "colorTop" "transparent" "colorBottom" "var(--color-bg-alt)") }}
 
 {{/* Quotes / Reviews section */}}
-{{ if false }}{{/* Hidden until review sources are verified. */}}
 <section class="section section--alt">
   <div class="container">
     <h2 class="text-center mb-2xl">Co mówią o Welewetce</h2>
@@ -16,9 +15,11 @@
         {{ partial "review-card.html" . }}
       {{ end }}
     </div>
+    <div class="text-center mt-xl">
+      <a href="{{ "recenzje/" | relURL }}" class="btn btn--outline">Wszystkie recenzje</a>
+    </div>
   </div>
 </section>
-{{ end }}
 
 {{/* Wave separator */}}
 {{ partial "wave-separator.html" (dict "flip" true "colorTop" "var(--color-bg-alt)" "colorBottom" "var(--color-bg)") }}
@@ -66,26 +67,5 @@
     </div>
   </div>
 </section>
-
-{{/* Wave separator */}}
-{{ partial "wave-separator.html" (dict "flip" true "colorTop" "var(--color-bg-alt)" "colorBottom" "var(--color-bg)") }}
-
-{{/* Press quotes section */}}
-{{ if false }}{{/* Hidden until review sources are verified. */}}
-<section class="section">
-  <div class="container">
-    <h2 class="text-center mb-2xl">W mediach</h2>
-    {{ range .Params.press_quotes }}
-    <blockquote class="press-quote">
-      <p>{{ .quote }}</p>
-      <cite>— {{ .author }}, <em>{{ .source }}</em></cite>
-    </blockquote>
-    {{ end }}
-    <div class="text-center mt-xl">
-      <a href="{{ "recenzje/" | relURL }}" class="btn btn--outline">Wszystkie recenzje</a>
-    </div>
-  </div>
-</section>
-{{ end }}
 
 {{ end }}
