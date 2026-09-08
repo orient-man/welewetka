@@ -32,8 +32,8 @@ Szczegółowe wymagania techniczne ustalamy indywidualnie — dostosowujemy się
 
 Zainteresowani organizacją spektaklu? Skontaktuj się z nami:
 
-{{< cta-button text="Napisz do nas" href="mailto:fundacja@wiatrakcje.pl?subject=Zamówienie%20spektaklu%20Welewetka" >}}
+{{< cta-button text="Napisz do nas" href="mailto:biuro@wiatrakcje.pl?subject=Zamówienie%20spektaklu%20Welewetka" >}}
 
-Lub napisz bezpośrednio na adres: [fundacja@wiatrakcje.pl](mailto:fundacja@wiatrakcje.pl)
+Lub napisz bezpośrednio na adres: [biuro@wiatrakcje.pl](mailto:biuro@wiatrakcje.pl)
 
 Odpowiadamy w ciągu 2–3 dni roboczych.
