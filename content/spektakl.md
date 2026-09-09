@@ -6,7 +6,7 @@ subtitle: "Monodram o pamięci, tożsamości i znikającym świecie Kaszub"
 
 ## O spektaklu
 
-**Welewetka. Jak znikają Kaszuby** to monodram teatralny — kameralna forma, w której na scenie obecna jest jedna aktorka wspierana muzyką na żywo. Spektakl trwa około 1,5 godziny i nie wymaga przerwy.
+**Welewetka. Jak znikają Kaszuby** to monodram teatralny — kameralna forma. Na scenie Aleksandra Długosz. Spektakl trwa około 1,5 godziny i nie wymaga przerwy.
 
 Przedstawienie powstało na podstawie książki reportażowej Stasi Budzisz pod tym samym tytułem, wydanej przez Wydawnictwo Poznańskie w 2023 roku. To opowieść o świecie, który znika — o kaszubskim języku, tradycjach i ludziach, którzy odchodzą zabierając ze sobą pamięć o dawnych Kaszubach.
 

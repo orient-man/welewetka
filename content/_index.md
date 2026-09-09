@@ -23,6 +23,6 @@ featured_reviews:
 
 Premiera odbyła się 12 listopada 2025 roku w Kartuskim Centrum Kultury. Projekt realizowany jest przez Fundację Wiatrakcje pod opieką artystyczną Aleksandry Engler-Malinowskiej i w reżyserii Eweliny Kaufmann.
 
-Na scenie — Aleksandra Długosz w towarzystwie muzyki na żywo w wykonaniu Weroniki Korthals i Pawła A. Nowaka.
+Na scenie Aleksandra Długosz.
 
 *Jesteś tym, co pamiętasz, ale także tym, co chcesz ocalić.*
