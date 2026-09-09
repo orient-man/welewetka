@@ -27,7 +27,7 @@ Projekt „Welewetka. Jak znikają Kaszuby" dofinansowano ze środków **Ministr
 
 Jeśli chcesz skontaktować się z Fundacją w sprawie spektaklu, współpracy lub zamówienia przedstawienia:
 
-**Email:** [fundacja@wiatrakcje.pl](mailto:fundacja@wiatrakcje.pl)
+**Email:** [biuro@wiatrakcje.pl](mailto:biuro@wiatrakcje.pl)
 
 **Adres korespondencyjny:**
 Fundacja Wiatrakcje
