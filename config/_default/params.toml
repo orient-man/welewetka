@@ -4,6 +4,9 @@ description = "Strona internetowa spektaklu teatralnego 'Welewetka. Jak znikają
 # Contact
 email = "biuro@wiatrakcje.pl"
 
+# Privacy-respecting analytics
+goatcounterId = "welewetka"
+
 # Social media
 [social]
   facebook = ""

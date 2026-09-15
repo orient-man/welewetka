@@ -14,5 +14,8 @@
   {{ $nav := resources.Get "js/nav.js" | minify | fingerprint }}
   <script src="{{ $nav.RelPermalink }}" defer></script>
   {{ block "scripts" . }}{{ end }}
+  {{ if hugo.IsProduction }}
+    <script data-goatcounter="https://{{ site.Params.goatcounterid }}.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  {{ end }}
 </body>
 </html>
